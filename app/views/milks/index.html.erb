@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @milks.each do |milk| %>
+    <div class="content_post">
+      <p><%= milk.condition %></p>
+      <span class="name">
+        <%= milk.amount %>
+      </span>
+    </div>
+  <% end %>
+</div>
