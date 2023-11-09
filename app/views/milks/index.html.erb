@@ -1,10 +1,27 @@
+<div class="child-information">
+  <p>そなくんのキロク</p>
+</div>
+
 <div class="contents row">
   <% @milks.each do |milk| %>
-    <div class="content_post">
-      <p><%= milk.condition %></p>
-      <span class="name">
-        <%= milk.amount %>
+    <div class="content">
+      <%= image_tag milk.image, class: "milk-img" if milk.image.attached? %>
+        <%= image_tag "IMG_4162.jpeg", class: "milk-img" %>
+
+      <span class="condition">
+        <%= milk.condition.name %>
       </span>
+
+      <% if milk.condition_id == 2 %>
+        <span class="amount">
+          を<%= milk.amount.name %>のみました！
+        </span>
+      <% end %>
+
+      <span class="time">
+        <%= milk.time.strftime( "%H:%M" ) %>
+      </span>
+
     </div>
   <% end %>
 </div>
