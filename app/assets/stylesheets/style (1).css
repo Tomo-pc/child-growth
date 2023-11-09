@@ -210,7 +210,6 @@ figure {
 /*
  * Define consistent border, margin, and padding. */
 fieldset {
-  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -741,7 +740,7 @@ header.header div.header__bar.row div.grid-6 a.post:hover {
 
 header.header {
   padding: 10px;
-  border-bottom: 1px solid #D8D8D8;
+  border-bottom: 1px solid rgb(219, 219, 219);
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -998,22 +997,25 @@ form textarea {
 }
 
 form input[type="submit"] {
-  background-color: #57C3E9;
+  background-color: #ffebc2;
   border-radius: 20px;
-  color: #fff;
+  font-family: "Nico Moji"!important;
+  color: #7e7e7e;
   border: 0;
   font-size: 18px;
+  transition: .3s cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  background-color: #e9c57e;
+  transform: scale(1.1);
 }
 
 .container {
   margin: 20px 0;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   box-sizing: border-box;
 }
 
@@ -1041,7 +1043,7 @@ form input[type="submit"]:hover {
 footer {
   margin: 30px auto;
   padding: 10px;
-  color: #D8D8D8;
+  color: #a4a4a4;
 }
 
 footer p {

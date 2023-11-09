@@ -1,9 +1,11 @@
+body {
+  background-color: #faf3e5!important;
+}
 
 .tytle-logo{
 height: 62px;
 position: absolute;
 top:-10px;
-;
 }
 
 header {
@@ -20,7 +22,7 @@ header {
   border-radius: 3px!important;
   display: inline-block;
   font-family: "Nico Moji"!important;
-  transition-duration: .3s;
+  transition: .3s cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 .btn:hover,a.post:hover {
