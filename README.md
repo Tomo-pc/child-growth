@@ -1,24 +1,64 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| nickname           | string | null: false               |
+| email              | string | null: false, unique: true |
+| password           | string | null: false               |
+| first_name         | string | null: false               |
+| last_name          | string | null: false               |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :milks
+- has_many :user_children
 
-* Configuration
 
-* Database creation
+## children テーブル
 
-* Database initialization
+| Column        | Type    | Options     |
+| ------------- | ------- | ------------|
+| nickname      | string  | null: false |
+| first_name    | string  | null: false |
+| last_name     | string  | null: false |
+| sex_id        | integer | null: false |
+| birthday      | date    | null: false |
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- has_many :milks
+- has_many :user_children
+- belongs_to_active_hash :sex
 
-* Deployment instructions
 
-* ...
+## milks テーブル
+
+| Column        | Type       | Options                        |
+| ------------- | ---------- | ------------------------------ |
+| condition_id  | integer    | null: false                    |
+| amount_id     | integer    |                                |
+| time          | time       | null: false                    |
+| user          | references | null: false, foreign_key: true |
+| child         | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :child
+- belongs_to_active_hash :condition
+- belongs_to_active_hash :amount
+
+
+## user_children テーブル
+
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| child  | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :child
