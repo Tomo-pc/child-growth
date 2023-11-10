@@ -1,16 +1,47 @@
-.content {
-  margin-top: 30px;
-  display: flex;
-  font-family: "Nico Moji"!important;
+.main {
+  background-color: #faf3e5;
+  padding-bottom: 30px;
 }
 
 .child-information {
   margin-left: 100px;
-  font-family: "Nico Moji"!important;
+  font-family: "Nico Moji";
+}
+
+.content {
+  width: 450px;
+  margin-top: 30px;
+  display: flex;
+  font-family: "Nico Moji";
+  border: 2px solid rgb(170, 166, 166);
+  border-radius: 20px;
+  padding: 8px 0px 5px 10px;
 }
 
 .milk-img {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   object-fit: cover;
+  border-radius: 30px;
+  margin-left: 20px;
 }
+
+.condition-amount-time{
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.condition-amount {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.amount {
+  margin-left:-15px ;
+}
+
+.time {
+  font-size: 20px;
+  margin: 48px 0 0 250px;
+}
+

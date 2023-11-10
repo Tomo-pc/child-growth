@@ -1,6 +1,6 @@
 class Amount < ActiveHash::Base
   self.data = [
-    { id: 1, name: '' }, { id: 2, name: '10ml' }, { id: 3, name: '15ml' }, { id: 4, name: '20ml' },
+    { id: 1, name: '0ml' }, { id: 2, name: '10ml' }, { id: 3, name: '15ml' }, { id: 4, name: '20ml' },
     { id: 5, name: '25ml' }, { id: 6, name: '30ml' }, { id: 7, name: '35ml' }, { id: 8, name: '40ml' },
     { id: 9, name: '45ml' }, { id: 10, name: '50ml' }, { id: 11, name: '60ml' }, { id: 12, name: '70ml' },
     { id: 13, name: '80ml' }, { id: 14, name: '90ml' }, { id: 15, name: '100ml' }, { id: 16, name: '110ml' },
