@@ -50,6 +50,5 @@ test:
 #
 production:
   <<: *default
-  database: child_growth_production
-  username: child_growth
-  password: <%= ENV["CHILD_GROWTH_DATABASE_PASSWORD"] %>
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
