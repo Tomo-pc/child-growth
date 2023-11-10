@@ -22,7 +22,15 @@ class MilksController < ApplicationController
   end
 
   def update
-    
+    milk = Milk.find(params[:id])
+    milk.update(milk_params)
+    redirect_to root_path
+  end
+
+  def destroy
+    milk = Milk.find(params[:id])
+    milk.destroy
+    redirect_to root_path
   end
 
   private
