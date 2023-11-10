@@ -17,6 +17,14 @@ class MilksController < ApplicationController
     end
   end
 
+  def edit
+    @milk = Milk.find(params[:id])
+  end
+
+  def update
+    
+  end
+
   private
 
   def milk_params

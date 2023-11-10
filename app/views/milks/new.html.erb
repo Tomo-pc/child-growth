@@ -1,7 +1,11 @@
-<%= form_with(model: @milk, local: true) do |form| %>
-  <%= form.collection_select(:condition_id, Condition.all, :id, :name, {}, {class:"condition-select"}) %>
-  <%= form.collection_select(:amount_id, Amount.all, :id, :name, {}, {class:"amount-select"}) %>
-  <%= form.time_select(:time, {class:'select-date', id:"time", prompt:'--', time_separator: ':'}, ignore_data: true) %>
-  <%= form.file_field :image, id:"item-image" %>
-  <%= form.submit "キロク" %>
-<% end %>
+<div class="container">
+  <h2>キロクフォーム</h2>
+  <%= form_with(model: @milk, local: true) do |form| %>
+    
+    <%= form.collection_select(:condition_id, Condition.all, :id, :name, {}, {class:"condition-select"}) %>
+    <%= form.collection_select(:amount_id, Amount.all, :id, :name, {}, {class:"amount-select"}) %>
+    <%= form.time_select(:time, {class:'select-date', id:"time", prompt:'--', time_separator: ':'}, ignore_data: true) %>
+    <%= form.file_field :image, id:"item-image" %>
+    <%= form.submit "キロク" %>
+  <% end %>
+</div>

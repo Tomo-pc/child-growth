@@ -8,6 +8,7 @@
   font-family: "Nico Moji";
 }
 
+
 .content {
   width: 450px;
   margin-top: 30px;
@@ -42,6 +43,42 @@
 
 .time {
   font-size: 20px;
-  margin: 48px 0 0 250px;
+  margin-left: 80px; 
 }
 
+.dropdown_time {
+  display: flex;
+}
+
+.dropdown__lists {
+  margin-left: 10px;
+  width: 150px;
+  display: flex;
+}
+
+.dropdown__list {
+  padding: 5px;
+  margin-right: 5px;
+  border: solid 1px rgb(170, 166, 166);
+  border-radius: 10px;
+}
+
+.dropdown {
+  transition-duration: .3s;
+
+}
+
+.dropdown:hover {
+  transform: scale(1.1);
+}
+
+a {
+  font-family: "Nico Moji";
+}
+
+.dropdown__listss {
+  margin-left: 10px;
+  width: 150px;
+  display: flex;
+  opacity: 10%;
+}
