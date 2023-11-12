@@ -2,7 +2,6 @@ class Milk < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
 
   belongs_to :user
-  #belongs_to :child
   belongs_to :condition
   belongs_to :amount
   has_one_attached :image

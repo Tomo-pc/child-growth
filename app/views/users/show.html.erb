@@ -1,0 +1,9 @@
+<div class="contents row">
+  <p><%= @nickname %>さんの投稿一覧</p>
+  <% @milks.each do |milk| %>
+    <div class="content_post" style="background-image: url(<%= milk.image %>);">
+      <p><%= milk.time %></p>
+      <span class="name"><%= milk.condition.name %></span>
+    </div>
+  <% end %>
+</div>

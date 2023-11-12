@@ -1,16 +1,20 @@
 body {
   background-color: #faf3e5!important;
-}
-
-.tytle-logo{
-height: 62px;
-position: absolute;
-top:-10px;
-left: -50px;
+  padding-top: 160px!important;
 }
 
 header {
+  height: 130px!important;
   background-color: #fff1d4!important; 
+}
+
+.tytle-logo{
+  margin-left: -60px;
+  height: 110px;
+}
+
+div.grid-6 {
+  margin: 10px 100px 0 0!important;
 }
 
 .btn, a.post{

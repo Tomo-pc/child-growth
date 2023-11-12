@@ -22,9 +22,12 @@ class MilksController < ApplicationController
   end
 
   def update
-    milk = Milk.find(params[:id])
-    milk.update(milk_params)
-    redirect_to root_path
+    @milk = Milk.find(params[:id])
+    if @milk.update(milk_params)
+      redirect_to root_path
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def destroy

@@ -3,8 +3,7 @@
   <head>
     <title>ChildGrowth</title>
     <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -18,14 +17,14 @@
         <%= link_to image_tag("tytle_logo.png", class:"tytle-logo"), "/" %>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
-          <span><%= current_user.nickname %>
-            <ul class="user__info">
-              <li>
-                <%= link_to "マイページ", "/users/#{current_user.id}", class: "pull_down" %>
-                <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "pull_down" %>
-              </li>
-            </ul>
-          </span>
+            <span><%= current_user.nickname %>
+              <ul class="user__info">
+                <li>
+                  <%= link_to "マイページ", "/users/#{current_user.id}", class: "pull_down" %>
+                  <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: "pull_down" %>
+                </li>
+              </ul>
+            </span>
             <%= link_to "キロクする", new_milk_path, class: "post l" %>
           </div>
         <% else %>
