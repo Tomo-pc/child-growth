@@ -62,18 +62,28 @@
 
 .dropdown__list {
   padding: 5px;
-  margin-right: 5px;
-  border: solid 1px rgb(170, 166, 166);
   border-radius: 10px;
 }
 
 .dropdown {
-  transition-duration: .3s;
+  margin-left: 10px;
+  height: 25px;
+  opacity: 0.8;
+  border-radius: 4px;
+  background-color: #fcd586;
+  cursor: pointer;
+  box-shadow: 0 5px #c2963e;
 
 }
 
 .dropdown:hover {
-  transform: scale(1.1);
+  opacity:1;
+}
+
+.dropdown:active {
+  position:relative;
+  top:7px;
+  box-shadow:none;
 }
 
 a {
@@ -85,4 +95,8 @@ a {
   width: 150px;
   display: flex;
   opacity: 10%;
+}
+
+a.dropdown__list {
+  color: #444444;
 }
