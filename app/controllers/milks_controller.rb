@@ -5,7 +5,6 @@ class MilksController < ApplicationController
 
   def new
     @milk = Milk.new
-    @milks = Milk.all
   end
 
   def create
