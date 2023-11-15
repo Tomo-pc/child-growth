@@ -1,0 +1,87 @@
+ /* スマホ表示時 */
+@media (max-width: 335px) {
+  
+  /* ヘッダー */
+  header.header {
+    height: 120px!important;
+  }
+
+  div.header__bar.row {
+    display: flex;
+  }
+
+  .tytle-logo {
+    margin-top: 15px;
+    margin-left: -20px;
+    height: 70px;
+    width: 350px!important;
+  }
+
+
+  ul.user__info {
+    margin-right: -10px!important;
+    margin-top: -2px;
+  }
+
+  .user_nav span {
+    width: 90px!important;
+  } 
+
+  /* トップページ */
+  .content {
+    width: 290px!important;
+    padding: 8px 0px 5px 0!important;
+  }
+
+  .milk-img {
+    margin-left: 10px!important;
+  }
+
+  .condition-amount {
+    font-size: 20px!important;
+  }
+
+  .dropdown__lists {
+    margin-top: 5px;
+    margin-left: -2px!important;
+    font-size: 10px;
+  }
+
+  .dropdown {
+    margin-left: 5px!important;
+    padding: 0 auto!important;
+    height: 20px!important;
+    opacity: 0.8;
+    border-radius: 4px;
+    background-color: #fcd586;
+    cursor: pointer;
+    box-shadow: 0 5px #c2963e;;
+  }
+
+  a.pull_down {
+    width: 120px;
+  }
+
+  a.post.lo {
+    margin-top: 9px;
+  }
+
+  .time {
+    font-size: 18px!important;
+    margin-top: 3px!important;
+    margin-left: -36px!important;
+  }
+   
+  /* 記録フォーム */
+  .container-new-edit {
+    padding: 0 20px!important;
+  }
+
+  .new-edit-title {
+    margin: -20px 0 10px 10px!important;
+  }
+
+  .milk-label {
+    margin-right: 32px;
+  }
+}

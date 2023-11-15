@@ -1,5 +1,5 @@
 .container-new-edit {
-  padding:0 500px 0 450px!important;
+  padding:0 500px 0 450px;
 }
 
 .submit_one {
@@ -73,7 +73,7 @@
   margin-bottom: 20px;
 }
 
-.form-content{
+.form-content {
   margin-bottom: 20px;
 }
 
