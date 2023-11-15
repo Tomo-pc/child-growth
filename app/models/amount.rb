@@ -18,5 +18,4 @@ class Amount < ActiveHash::Base
 
   include ActiveHash::Associations
   has_many :milks
-
 end

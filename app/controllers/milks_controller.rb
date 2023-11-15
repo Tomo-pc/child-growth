@@ -1,6 +1,6 @@
 class MilksController < ApplicationController
   def index
-    @milks = Milk.order("created_at DESC")
+    @milks = Milk.order('created_at DESC')
   end
 
   def new
