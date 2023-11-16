@@ -29,7 +29,7 @@
 
   /* トップページ */
   .content {
-    width: 290px!important;
+    width: 360px!important;
     padding: 8px 0px 5px 0!important;
   }
 
@@ -41,21 +41,8 @@
     font-size: 20px!important;
   }
 
-  .dropdown__lists {
-    margin-top: 5px;
-    margin-left: -2px!important;
-    font-size: 10px;
-  }
-
-  .dropdown {
-    margin-left: 5px!important;
-    padding: 0 auto!important;
-    height: 20px!important;
-    opacity: 0.8;
-    border-radius: 4px;
-    background-color: #fcd586;
-    cursor: pointer;
-    box-shadow: 0 5px #c2963e;;
+  a.post.l {
+    margin-right: 35px;
   }
 
   a.pull_down {
@@ -69,10 +56,10 @@
   .time {
     font-size: 18px!important;
     margin-top: 3px!important;
-    margin-left: -36px!important;
+    margin-left: 30px!important;
   }
    
-  /* 記録フォーム */
+  /* 記録編集フォーム */
   .container-new-edit {
     padding: 0 20px!important;
   }
@@ -84,4 +71,29 @@
   .milk-label {
     margin-right: 32px;
   }
+
+  a.new-edit-redirect {
+    width: 150px!important;
+    margin-right: 20px!important;
+  }
+  
+  /* マイページ */
+  .user_nav.grid-6 {
+    display: grid;
+  }
+
+  .show-contents-row {
+    width: 500px!important;
+    margin: 0 50px!important;
+  }
+
+  .show-name {
+    margin-bottom: 20px!important;
+  }
+
+  .milk-image {
+    width: 140px!important;
+    height: 140px!important;
+  }
 }
+

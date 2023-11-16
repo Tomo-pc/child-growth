@@ -10,9 +10,9 @@
     </div>
 
     <div class="form-content">
-      <div class="new-edit-form-label">
-        <%= form.label :"ミルクはどのくらい飲みましたか？", class:'milk-label' %>
-        <%= form.label :"※ミルク以外の場合は選択不要です", class: 'milk-amount-alert' %> <br />  
+      <div class="new-edit-form-label-milk">
+        <span class="milk-label"><%= form.label :"ミルクはどのくらい飲みましたか？", class:'milk-label' %></span>
+        <span class="milk-label"><%= form.label :"※ミルク以外の場合は選択不要です", class: 'milk-amount-alert' %></span> <br />  
       </div>  
         <%= form.collection_select(:amount_id, Amount.all, :id, :name, {}, {class:"amount-select"}) %>
     </div>

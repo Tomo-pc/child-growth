@@ -8,6 +8,10 @@
   justify-content: space-around;
 }
 
+.new-edit-form-label-milk {
+  margin-bottom: -20px;
+}
+
 .new-edit-submit {
   width: 200px!important;
   height: 35px!important;
@@ -41,6 +45,10 @@
 .new-edit-redirect:hover {
   transform: scale(1.1)!important;
   background-color: #ffd684!important;
+}
+
+.milk-label {
+  display: block;
 }
 
 .redirect {
