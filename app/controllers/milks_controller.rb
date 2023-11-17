@@ -1,4 +1,6 @@
 class MilksController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @milks = Milk.order('created_at DESC')
   end
@@ -18,6 +20,9 @@ class MilksController < ApplicationController
 
   def edit
     @milk = Milk.find(params[:id])
+    unless current_user == @milk.user
+      redirect_to root_path
+    end
   end
 
   def update
