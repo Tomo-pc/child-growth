@@ -3,6 +3,8 @@ class MilksController < ApplicationController
 
   def index
     @milks = Milk.order('created_at DESC')
+    @user = current_user
+
   end
 
   def new

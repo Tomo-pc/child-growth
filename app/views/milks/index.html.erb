@@ -1,15 +1,28 @@
 <div class="main">
   <div class="contents row">
-  <div class="child-information">
-    <p>そなくんのキロク</p>
-  </div>
+    <div class="child-information">
+      <div class="child-image-name">
+        <% if @user.sex_id == 2 %>
+          <%= image_tag @user.image, class: "milk-top-img" %>
+          <p><%= @user.child_name %>くんのキロク</p>
+        <% else %>
+          <%= image_tag @user.image, class: "milk-top-img" %>
+          <p><%= @user.child_name %>ちゃんのキロク</p>
+        <% end %>
+      </div>
+      <p class="days-since">産まれてから<br />
+      <%= @user.days_since_birth %>日目</p>
+    </div>
+
+ 
+
     <% @milks.each do |milk| %>
       <div class="content">
 
         <% if milk.image.attached? %>
           <%= image_tag milk.image, class: "milk-img" %>
         <% else %>
-          <%= image_tag "IMG_4162.jpeg", class: "milk-img" %>
+          <%= image_tag @user.image, class: "milk-img" %>
         <% end %>
 
         <div class="condition-amount-time">

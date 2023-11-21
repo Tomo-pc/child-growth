@@ -21,3 +21,31 @@
 .actions {
   margin: 40px;
 }
+
+.date-date {
+  display: flex;
+}
+
+.date-label {
+  margin-top: 10px;
+}
+
+.input-birth-wrap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+select#user_birthday_1i {
+  width: 170px;
+  margin-left: 5px;
+}
+
+select#user_birthday_2i {
+  width: 170px;
+  margin-left: 5px;
+}
+
+select#user_birthday_3i {
+  width: 170px;
+  margin-left: 5px;
+}

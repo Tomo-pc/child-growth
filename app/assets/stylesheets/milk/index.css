@@ -5,8 +5,31 @@
 }
 
 .child-information {
+  margin-top: 10px;
+  display: flex;
+}
+
+.child-image-name {
+  display: flex;
   font-size: 20px;
   font-family: "Nico Moji";
+  margin-top: 10px;
+}
+
+.days-since {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Nico Moji";
+  margin-left: 120px;
+}
+
+.milk-top-img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-left: 30px;
+  margin-right: 10px;
 }
 
 .contents.row {

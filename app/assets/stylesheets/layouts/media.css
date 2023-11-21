@@ -28,6 +28,11 @@
   } 
 
   /* トップページ */
+  p.days-since {
+    font-size: 14px;
+    margin-left: 40px;
+}
+
   .content {
     width: 360px!important;
     padding: 8px 0px 5px 0!important;
@@ -97,3 +102,7 @@
   }
 }
 
+/* 新規登録 */
+.image-label {
+  font-size: 14px;
+}

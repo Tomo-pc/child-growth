@@ -1,5 +1,12 @@
 <div class="show-contents-row">
-  <p class="show-name"><%= @nickname %>さんの投稿したそなくんの写真一覧</p>
+  <p class="show-name">
+  <% if @sex_id == 2 %>
+    <%= @nickname %>さんの投稿した<%= @child_name %>くんの写真一覧
+  <% else %>
+    <%= @nickname %>さんの投稿した<%= @child_name %>ちゃんの写真一覧
+  <% end %>
+    
+  </p>
   <div class="show-contents">
     <% @milks.each do |milk| %>
       <div class="show-content">
