@@ -4,10 +4,10 @@
       <div class="child-image-name">
         <% if @user.sex_id == 2 %>
           <%= image_tag @user.image, class: "milk-top-img" %>
-          <p><%= @user.child_name %>くんのキロク</p>
+          <p class="child-top-name"><%= @user.child_name %>くんのキロク</p>
         <% else %>
           <%= image_tag @user.image, class: "milk-top-img" %>
-          <p><%= @user.child_name %>ちゃんのキロク</p>
+          <p class="child-top-name"><%= @user.child_name %>ちゃんのキロク</p>
         <% end %>
       </div>
       <p class="days-since">産まれてから<br />
