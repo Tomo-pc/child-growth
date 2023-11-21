@@ -14,7 +14,7 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :child_name, presence: true
-  validates :sex_id, presence: true
+  validates :sex_id, presence: true, numericality: { other_than: 1 }
   validates :image, presence: true
   validates :birthday, presence: true
 
