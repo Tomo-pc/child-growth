@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="GHht-DHdNQllE4jsMzGl" name="ページ1">
-        <mxGraphModel dx="497" dy="497" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFCC" math="0" shadow="0">
+        <mxGraphModel dx="354" dy="497" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFCC" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -22,13 +22,13 @@
                 <mxCell id="8" value="password(パスワード)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="3" vertex="1">
                     <mxGeometry y="146" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="child_name(子供の名前)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" vertex="1" parent="3">
+                <mxCell id="27" value="child_name(子供の名前)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="3" vertex="1">
                     <mxGeometry y="176" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="sex_id(子供の性別)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" vertex="1" parent="3">
+                <mxCell id="28" value="sex_id(子供の性別)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="3" vertex="1">
                     <mxGeometry y="206" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="birthday(子供の生年月日)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" vertex="1" parent="3">
+                <mxCell id="29" value="birthday(子供の生年月日)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="3" vertex="1">
                     <mxGeometry y="236" width="150" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="milks" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;strokeColor=#314354;fillColor=#647687;fontColor=#000000;" parent="1" vertex="1">
