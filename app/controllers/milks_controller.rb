@@ -4,7 +4,6 @@ class MilksController < ApplicationController
   def index
     @milks = Milk.order('created_at DESC')
     @user = current_user
-
   end
 
   def new
@@ -22,9 +21,9 @@ class MilksController < ApplicationController
 
   def edit
     @milk = Milk.find(params[:id])
-    unless current_user == @milk.user
-      redirect_to root_path
-    end
+    return if current_user == @milk.user
+
+    redirect_to root_path
   end
 
   def update

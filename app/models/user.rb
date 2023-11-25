@@ -8,7 +8,6 @@ class User < ApplicationRecord
   belongs_to :sex
   has_many :milks
   has_one_attached :image
-  
 
   validates :nickname, presence: true
   validates :first_name, presence: true
